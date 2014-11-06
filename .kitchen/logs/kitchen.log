@@ -1,0 +1,37 @@
+E, [2014-11-05T23:37:29.016485 #16324] ERROR -- Kitchen: ------Exception-------
+E, [2014-11-05T23:37:29.016527 #16324] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2014-11-05T23:37:29.016549 #16324] ERROR -- Kitchen: Message: Could not load or activate Berkshelf (Unable to activate berkshelf-2.0.18, because thor-0.19.1 conflicts with thor (~> 0.18.0))
+E, [2014-11-05T23:37:29.016569 #16324] ERROR -- Kitchen: ---Nested Exception---
+E, [2014-11-05T23:37:29.016588 #16324] ERROR -- Kitchen: Class: Gem::LoadError
+E, [2014-11-05T23:37:29.016608 #16324] ERROR -- Kitchen: Message: Unable to activate berkshelf-2.0.18, because thor-0.19.1 conflicts with thor (~> 0.18.0)
+E, [2014-11-05T23:37:29.016627 #16324] ERROR -- Kitchen: ------Backtrace-------
+E, [2014-11-05T23:37:29.016646 #16324] ERROR -- Kitchen: /var/lib/gems/1.9.1/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef/berkshelf.rb:80:in `rescue in load_berkshelf!'
+E, [2014-11-05T23:37:29.016665 #16324] ERROR -- Kitchen: /var/lib/gems/1.9.1/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef/berkshelf.rb:67:in `load_berkshelf!'
+E, [2014-11-05T23:37:29.016686 #16324] ERROR -- Kitchen: /var/lib/gems/1.9.1/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef/berkshelf.rb:43:in `load!'
+E, [2014-11-05T23:37:29.016705 #16324] ERROR -- Kitchen: /var/lib/gems/1.9.1/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef_base.rb:135:in `load_needed_dependencies!'
+E, [2014-11-05T23:37:29.016724 #16324] ERROR -- Kitchen: /var/lib/gems/1.9.1/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/base.rb:44:in `instance='
+E, [2014-11-05T23:37:29.016743 #16324] ERROR -- Kitchen: /var/lib/gems/1.9.1/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:240:in `setup_provisioner'
+E, [2014-11-05T23:37:29.016762 #16324] ERROR -- Kitchen: /var/lib/gems/1.9.1/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:93:in `initialize'
+E, [2014-11-05T23:37:29.016781 #16324] ERROR -- Kitchen: /var/lib/gems/1.9.1/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:128:in `new'
+E, [2014-11-05T23:37:29.016801 #16324] ERROR -- Kitchen: /var/lib/gems/1.9.1/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:128:in `new_instance'
+E, [2014-11-05T23:37:29.016820 #16324] ERROR -- Kitchen: /var/lib/gems/1.9.1/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:73:in `block in build_instances'
+E, [2014-11-05T23:37:29.016839 #16324] ERROR -- Kitchen: /var/lib/gems/1.9.1/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `map'
+E, [2014-11-05T23:37:29.016859 #16324] ERROR -- Kitchen: /var/lib/gems/1.9.1/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `with_index'
+E, [2014-11-05T23:37:29.016878 #16324] ERROR -- Kitchen: /var/lib/gems/1.9.1/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `build_instances'
+E, [2014-11-05T23:37:29.016897 #16324] ERROR -- Kitchen: /var/lib/gems/1.9.1/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:52:in `instances'
+E, [2014-11-05T23:37:29.016917 #16324] ERROR -- Kitchen: /var/lib/gems/1.9.1/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:64:in `get_filtered_instances'
+E, [2014-11-05T23:37:29.016937 #16324] ERROR -- Kitchen: /var/lib/gems/1.9.1/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:85:in `parse_subcommand'
+E, [2014-11-05T23:37:29.016956 #16324] ERROR -- Kitchen: /var/lib/gems/1.9.1/gems/test-kitchen-1.2.1/lib/kitchen/command/list.rb:31:in `call'
+E, [2014-11-05T23:37:29.016975 #16324] ERROR -- Kitchen: /var/lib/gems/1.9.1/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:47:in `perform'
+E, [2014-11-05T23:37:29.016994 #16324] ERROR -- Kitchen: /var/lib/gems/1.9.1/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:81:in `list'
+E, [2014-11-05T23:37:29.017013 #16324] ERROR -- Kitchen: /var/lib/gems/1.9.1/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2014-11-05T23:37:29.017032 #16324] ERROR -- Kitchen: /var/lib/gems/1.9.1/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2014-11-05T23:37:29.017051 #16324] ERROR -- Kitchen: /var/lib/gems/1.9.1/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:233:in `invoke_task'
+E, [2014-11-05T23:37:29.017070 #16324] ERROR -- Kitchen: /var/lib/gems/1.9.1/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2014-11-05T23:37:29.017094 #16324] ERROR -- Kitchen: /var/lib/gems/1.9.1/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2014-11-05T23:37:29.017114 #16324] ERROR -- Kitchen: /var/lib/gems/1.9.1/gems/test-kitchen-1.2.1/bin/kitchen:13:in `block in <top (required)>'
+E, [2014-11-05T23:37:29.017134 #16324] ERROR -- Kitchen: /var/lib/gems/1.9.1/gems/test-kitchen-1.2.1/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2014-11-05T23:37:29.017154 #16324] ERROR -- Kitchen: /var/lib/gems/1.9.1/gems/test-kitchen-1.2.1/bin/kitchen:13:in `<top (required)>'
+E, [2014-11-05T23:37:29.017173 #16324] ERROR -- Kitchen: /usr/local/bin/kitchen:23:in `load'
+E, [2014-11-05T23:37:29.017192 #16324] ERROR -- Kitchen: /usr/local/bin/kitchen:23:in `<main>'
+E, [2014-11-05T23:37:29.017211 #16324] ERROR -- Kitchen: ----------------------
