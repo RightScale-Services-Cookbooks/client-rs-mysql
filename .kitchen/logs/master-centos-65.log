@@ -1,1 +1,0 @@
-F, [2014-11-05T23:37:29.016204 #16324] FATAL -- master-centos-65: The `berkshelf' gem is missing and must be installed or cannot be properly activated. Run `gem install berkshelf` or add the following to your Gemfile if you are using Bundler: `gem 'berkshelf'`.
