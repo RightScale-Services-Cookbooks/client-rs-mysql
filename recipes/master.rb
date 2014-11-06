@@ -4,6 +4,7 @@
 #
 
 chef_gem 'chef-rewind'
+chef_gem 'fog'
 require 'chef/rewind'
 
 include_recipe 'rs-mysql::master'
@@ -15,7 +16,7 @@ rewind :dns => dns_name do
   dns_provider 'aws'
   credentials(
     'aws_acesss_key_id' => node['rs-mysql']['dns']['user_key'],
-    'aws_secret_access_key' => node['rs-mysql']['dns']['secret_key']
+    'aws_secret_access_key' => node['rs-mysql']['dns']['secret_key'],
   )
   entry_name dns_name
   domain domain_name
