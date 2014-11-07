@@ -16,4 +16,5 @@ group :integration do
   gem 'travis-lint'
   gem 'mysql'
   gem 'rspec-expectations', '~> 2.14.0'
+  gem 'nokogiri', '~> 1.5.11'
 end

@@ -5,7 +5,7 @@ driver_config:
 
 platforms:
 - name: ubuntu-14.04
-  run_list: ['recipe[apt]']
+  run_list: ['recipe[apt]', 'recipe[fake::dependencies]']
   driver_config:
     box: opscode-ubuntu-14.04
     customize:
@@ -25,7 +25,7 @@ suites:
       private_ips: ['10.0.2.15']
     rs-mysql:
       dns:
-        master_fqdn: 'www.test.com'
+        master_fqdn: <%= ENV['DNS_FQDN'] %>
         user_key: <%= ENV['DNS_USER_KEY'] %>
         secret_key: <%= ENV['DNS_SECRET_KEY'] %>
       backup:
