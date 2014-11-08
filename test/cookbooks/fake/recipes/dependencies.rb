@@ -17,9 +17,13 @@
 # limitations under the License.
 #
 
-package 'gcc'
-package 'libxslt1-dev'
+include_recipe 'chef-sugar::default'
 
-gem_package 'nokogiri' do
-  options("--version 1.5.11 --no-ri --no-rdoc")
+compile_time do
+  package 'gcc'
+  package 'libxslt1-dev'
+
+  gem_package 'nokogiri' do
+    options("--version 1.5.11 --no-ri --no-rdoc")
+  end
 end
