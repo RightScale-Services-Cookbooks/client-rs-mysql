@@ -15,7 +15,7 @@ rewind :dns => dns_name do
   provider Chef::Provider::Dns
   dns_provider 'aws'
   credentials(
-    'aws_acesss_key_id' => node['rs-mysql']['dns']['user_key'],
+    'aws_access_key_id' => node['rs-mysql']['dns']['user_key'],
     'aws_secret_access_key' => node['rs-mysql']['dns']['secret_key'],
   )
   entry_name dns_name
