@@ -15,7 +15,7 @@ include_recipe 'rs-mysql::master'
 dns_name = node['rs-mysql']['dns']['master_fqdn'].split('.').first
 
 rewind :dns => dns_name do
-  provider Chef::Provider::Dns
+  provider 'dns'
   dns_provider 'aws'
   credentials(
     'aws_access_key_id' => node['rs-mysql']['dns']['user_key'],
